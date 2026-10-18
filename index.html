@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Student ID Card System | Dembi Dollo Education Office</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============================ LOGIN ============================ -->
+<section id="loginScreen" class="login" aria-label="Admin sign in">
+  <div class="login-art" aria-hidden="true">
+    <svg viewBox="0 0 640 640" class="scene" xmlns="http://www.w3.org/2000/svg" role="img">
+      <defs>
+        <linearGradient id="gPage" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e8eef8"/>
+        </linearGradient>
+      </defs>
+      <!-- sun + rings -->
+      <circle cx="320" cy="330" r="270" fill="rgba(255,255,255,.05)"/>
+      <circle cx="320" cy="330" r="200" fill="rgba(255,255,255,.06)"/>
+      <circle cx="320" cy="330" r="130" fill="rgba(255,255,255,.07)"/>
+
+      <!-- globe -->
+      <g transform="translate(112 150)">
+        <circle r="54" fill="#1f7a4d"/>
+        <ellipse rx="22" ry="54" fill="none" stroke="rgba(255,255,255,.55)" stroke-width="2"/>
+        <ellipse rx="44" ry="54" fill="none" stroke="rgba(255,255,255,.35)" stroke-width="2"/>
+        <line x1="-54" y1="0" x2="54" y2="0" stroke="rgba(255,255,255,.55)" stroke-width="2"/>
+        <path d="M-46 -26 H46 M-46 26 H46" stroke="rgba(255,255,255,.35)" stroke-width="2"/>
+        <circle r="54" fill="none" stroke="#e3a817" stroke-width="4"/>
+      </g>
+
+      <!-- pencil -->
+      <g transform="translate(520 120) rotate(32)">
+        <rect x="-14" y="-10" width="28" height="22" rx="4" fill="#f08a8a"/>
+        <rect x="-14" y="12" width="28" height="10" fill="#c9ced6"/>
+        <rect x="-14" y="22" width="28" height="140" fill="#e3a817"/>
+        <rect x="-4" y="22" width="8" height="140" fill="#f4c94f"/>
+        <polygon points="-14,162 14,162 0,198" fill="#f2d9b0"/>
+        <polygon points="-5,184 5,184 0,198" fill="#1b3b63"/>
+      </g>
+
+      <!-- ruler -->
+      <g transform="translate(70 470) rotate(-18)">
+        <rect width="170" height="34" rx="4" fill="#f4c94f"/>
+        <g stroke="#7a5a00" stroke-width="2">
+          <line x1="14" y1="0" x2="14" y2="14"/><line x1="34" y1="0" x2="34" y2="9"/>
+          <line x1="54" y1="0" x2="54" y2="14"/><line x1="74" y1="0" x2="74" y2="9"/>
+          <line x1="94" y1="0" x2="94" y2="14"/><line x1="114" y1="0" x2="114" y2="9"/>
+          <line x1="134" y1="0" x2="134" y2="14"/><line x1="154" y1="0" x2="154" y2="9"/>
+        </g>
+      </g>
+
+      <!-- graduation cap -->
+      <g>
+        <path d="M232 252 V312 C232 346 408 346 408 312 V252 L320 292 Z" fill="#12335c"/>
+        <polygon points="320,170 468,232 320,294 172,232" fill="#0b1e36"/>
+        <polygon points="320,170 468,232 320,294 172,232" fill="none" stroke="rgba(255,255,255,.18)" stroke-width="2"/>
+        <path d="M430 246 V318" stroke="#e3a817" stroke-width="5" stroke-linecap="round"/>
+        <circle cx="430" cy="326" r="9" fill="#e3a817"/>
+        <path d="M424 326 V350 M430 326 V354 M436 326 V350" stroke="#e3a817" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="320" cy="232" r="7" fill="#e3a817"/>
+      </g>
+
+      <!-- open book -->
+      <g>
+        <path d="M320 462 C262 434 168 430 98 448 L98 548 C168 530 262 534 320 562 Z" fill="#0b1e36" opacity=".55" transform="translate(0 10)"/>
+        <path d="M320 452 C262 424 168 420 98 438 L98 538 C168 520 262 524 320 552 Z" fill="url(#gPage)"/>
+        <path d="M320 452 C378 424 472 420 542 438 L542 538 C472 520 378 524 320 552 Z" fill="#f5f8fd"/>
+        <path d="M320 452 V552" stroke="#c4cfdf" stroke-width="3"/>
+        <g stroke="#9db0cc" stroke-width="3" stroke-linecap="round" fill="none">
+          <path d="M130 466 C180 456 240 460 290 478"/><path d="M130 490 C180 480 240 484 290 502"/><path d="M130 514 C180 504 240 508 290 526"/>
+          <path d="M350 478 C400 460 460 456 510 466"/><path d="M350 502 C400 484 460 480 510 490"/>
+        </g>
+        <path d="M470 440 V500 L486 486 L502 500 V444 C494 441 480 440 470 440 Z" fill="#c6392f"/>
+      </g>
+
+      <!-- stars / dots -->
+      <g fill="#f4c94f">
+        <circle cx="560" cy="300" r="5"/><circle cx="48" cy="330" r="4"/><circle cx="250" cy="76" r="4"/>
+        <circle cx="590" cy="470" r="4"/><circle cx="350" cy="610" r="4"/>
+      </g>
+      <path d="M600 372 l7 16 17 2 -13 12 4 17 -15 -9 -15 9 4 -17 -13 -12 17 -2z" fill="#e3a817" opacity=".9"/>
+    </svg>
+
+    <div class="login-caption">
+      <h1>Dembi Dollo Education Office</h1>
+      <p>Student identification card system for high schools</p>
+    </div>
+    <div class="tricolor" aria-hidden="true"><i></i><i></i><i></i></div>
+  </div>
+
+  <div class="login-panel">
+    <form id="loginForm" class="login-card" autocomplete="off" novalidate>
+      <div class="login-badge" aria-hidden="true">
+        <svg viewBox="0 0 48 48" width="34" height="34"><polygon points="24,8 44,17 24,26 4,17" fill="#fff"/><path d="M12 22 V32 C12 38 36 38 36 32 V22 L24 28 Z" fill="#cfe0f7"/><rect x="40" y="18" width="3" height="14" fill="#e3a817"/></svg>
+      </div>
+      <h2>Admin sign in</h2>
+      <p class="muted">Sign in to manage students and print ID cards.</p>
+
+      <label for="loginUser">Username</label>
+      <input id="loginUser" type="text" value="" placeholder="admin" autocomplete="username" required>
+
+      <label for="loginPass">Password</label>
+      <div class="pw-wrap">
+        <input id="loginPass" type="password" placeholder="Enter password" autocomplete="current-password" required>
+        <button type="button" class="pw-toggle" id="pwToggle" aria-label="Show password">Show</button>
+      </div>
+
+      <div id="loginError" class="form-error" role="alert" hidden></div>
+      <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+      <p class="login-foot">Student ID Card System</p>
+    </form>
+  </div>
+</section>
+
+<!-- ============================ APP ============================ -->
+<div id="app" class="app" hidden>
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <div class="brand-mark" id="brandMark">ID</div>
+      <div>
+        <div class="brand-title">Student ID Cards</div>
+        <div class="brand-sub">Dembi Dollo Education Office</div>
+      </div>
+    </div>
+    <nav class="nav" aria-label="Main">
+      <button class="nav-item active" data-view="dashboard">Dashboard</button>
+      <button class="nav-item" data-view="students">Students <span class="nav-count" id="navCount">0</span></button>
+      <button class="nav-item" data-view="import">Import from Excel</button>
+      <button class="nav-item" data-view="cards">Generate ID cards</button>
+      <button class="nav-item" data-view="settings">School settings</button>
+    </nav>
+    <button class="nav-item nav-logout" id="logoutBtn">Sign out</button>
+  </aside>
+
+  <div class="main-wrap">
+    <header class="topbar">
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">Menu</button>
+      <div class="topbar-school">
+        <strong id="topSchool">School</strong>
+        <span id="topYear" class="muted"></span>
+      </div>
+    </header>
+
+    <main class="main">
+
+      <!-- Dashboard -->
+      <section class="view active" id="view-dashboard">
+        <header class="view-head">
+          <h1>Dashboard</h1>
+          <p>Overview of the students registered in this school.</p>
+        </header>
+        <div class="stats" id="dashStats"></div>
+        <div class="grid-2">
+          <div class="panel">
+            <h2>Students by grade</h2>
+            <div id="gradeChart" class="chart"></div>
+          </div>
+          <div class="panel">
+            <h2>Recently added</h2>
+            <ul id="recentList" class="recent"></ul>
+          </div>
+        </div>
+        <div class="panel">
+          <h2>Quick actions</h2>
+          <div class="btn-row">
+            <button class="btn btn-primary" data-go="students" data-new="1">Add a student</button>
+            <button class="btn" data-go="import">Import from Excel</button>
+            <button class="btn" data-go="cards">Generate ID cards</button>
+            <button class="btn" data-go="settings">School settings</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Students -->
+      <section class="view" id="view-students">
+        <header class="view-head">
+          <h1>Students</h1>
+          <p>Add, edit and manage student records. Everything is saved until you delete it.</p>
+        </header>
+        <div class="panel">
+          <div class="toolbar">
+            <input type="search" id="stSearch" placeholder="Search by name, ID, phone or section" aria-label="Search students">
+            <select id="stGrade" aria-label="Filter by grade">
+              <option value="">All grades</option><option value="9">Grade 9</option><option value="10">Grade 10</option>
+              <option value="11">Grade 11</option><option value="12">Grade 12</option>
+            </select>
+            <select id="stGender" aria-label="Filter by gender">
+              <option value="">All genders</option><option>Male</option><option>Female</option>
+            </select>
+            <select id="stSort" aria-label="Sort students">
+              <option value="name">Name A to Z</option><option value="newest">Newest first</option>
+              <option value="id">Student ID</option><option value="grade">Grade and section</option>
+            </select>
+          </div>
+          <div class="btn-row spaced">
+            <button class="btn btn-primary" id="addStudentBtn">Add student</button>
+            <button class="btn" id="stCardsBtn">ID cards for selected</button>
+            <button class="btn" id="stExportBtn">Export to Excel</button>
+            <button class="btn btn-danger" id="stDeleteSelBtn">Delete selected</button>
+            <span class="muted" id="stSelInfo"></span>
+          </div>
+          <div class="table-wrap">
+            <table class="table" id="studentsTable">
+              <thead>
+                <tr>
+                  <th class="col-check"><input type="checkbox" id="stCheckAll" aria-label="Select all students in the list"></th>
+                  <th>Photo</th><th>Student ID</th><th>Name</th><th>Gender</th><th>Grade</th><th>Parent phone</th><th class="col-actions">Actions</th>
+                </tr>
+              </thead>
+              <tbody id="stBody"></tbody>
+            </table>
+          </div>
+          <div class="pager" id="stPager"></div>
+        </div>
+      </section>
+
+      <!-- Import -->
+      <section class="view" id="view-import">
+        <header class="view-head">
+          <h1>Import from Excel</h1>
+          <p>Add many students at once using the Excel template. Nothing is saved until you confirm.</p>
+        </header>
+        <div class="panel">
+          <h2>Step 1. Get the template</h2>
+          <p class="muted">Fill in one student per row. Student ID is required and must start with STU-. Photos are added afterwards from the Students page.</p>
+          <div class="btn-row"><button class="btn" id="tplBtn">Download Excel template</button></div>
+        </div>
+        <div class="panel">
+          <h2>Step 2. Choose your filled file</h2>
+          <label class="dropzone" id="dropzone" for="importFile">
+            <strong>Click to choose a file</strong>
+            <span>or drop an Excel (.xlsx, .xls) or CSV file here</span>
+          </label>
+          <input type="file" id="importFile" accept=".xlsx,.xls,.csv" hidden>
+        </div>
+        <div class="panel" id="importPreviewPanel" hidden>
+          <h2>Step 3. Check and import</h2>
+          <div class="chips" id="importChips"></div>
+          <label class="check-line"><input type="checkbox" id="importUpdate" checked> Update existing students that have the same Student ID</label>
+          <div class="table-wrap tall">
+            <table class="table compact" id="importTable">
+              <thead><tr><th>Row</th><th>Status</th><th>Student ID</th><th>Name</th><th>Gender</th><th>Grade</th><th>Section</th><th>Date of birth</th><th>Notes</th></tr></thead>
+              <tbody id="importBody"></tbody>
+            </table>
+          </div>
+          <div class="btn-row spaced">
+            <button class="btn btn-primary" id="importCommitBtn">Import valid rows</button>
+            <button class="btn" id="importCancelBtn">Cancel</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ID cards -->
+      <section class="view" id="view-cards">
+        <header class="view-head">
+          <h1>Generate ID cards</h1>
+          <p>Each A4 sheet holds up to 8 cards. Print directly or export a PDF.</p>
+        </header>
+        <div class="cards-layout">
+          <div class="panel cards-side">
+            <h2>1. Choose students</h2>
+            <div class="toolbar tight">
+              <input type="search" id="cdSearch" placeholder="Search students" aria-label="Search students for cards">
+              <select id="cdGrade" aria-label="Filter by grade">
+                <option value="">All grades</option><option value="9">Grade 9</option><option value="10">Grade 10</option>
+                <option value="11">Grade 11</option><option value="12">Grade 12</option>
+              </select>
+            </div>
+            <div class="btn-row spaced">
+              <button class="btn btn-sm" id="cdSelectAll">Select all shown</button>
+              <button class="btn btn-sm" id="cdClear">Clear</button>
+            </div>
+            <div class="pick-list" id="cdList"></div>
+
+            <h2>2. Choose sides</h2>
+            <div class="radio-row">
+              <label><input type="radio" name="cdMode" value="both" checked> Front and back (both sides)</label>
+              <label><input type="radio" name="cdMode" value="front"> Front only</label>
+              <label><input type="radio" name="cdMode" value="back"> Back only</label>
+            </div>
+            <p class="hint">For both sides, print the front sheets and back sheets double-sided (flip on long edge). The backs are mirrored so every back lines up behind its front.</p>
+
+            <h2>3. Print or save</h2>
+            <div class="summary" id="cdSummary">No students selected.</div>
+            <div class="btn-row">
+              <button class="btn btn-primary" id="cdPrint">Print</button>
+              <button class="btn" id="cdPdf">Export PDF</button>
+            </div>
+          </div>
+          <div class="panel cards-preview-panel">
+            <h2>Preview</h2>
+            <div id="cardPreview" class="card-preview"><p class="muted empty">Select one or more students to see the ID cards here.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Settings -->
+      <section class="view" id="view-settings">
+        <header class="view-head">
+          <h1>School settings</h1>
+          <p>These details appear on every ID card.</p>
+        </header>
+        <div class="grid-2">
+          <div class="panel">
+            <h2>School details</h2>
+            <label for="setSchool">School name (printed under the title)</label>
+            <input id="setSchool" type="text" maxlength="80">
+            <label for="setYear">Academic year</label>
+            <input id="setYear" type="text" maxlength="20" placeholder="2026/2027">
+            <label for="setDirector">Director name</label>
+            <input id="setDirector" type="text" maxlength="60">
+            <label for="setColor">Card color</label>
+            <input id="setColor" type="color" value="#17508f">
+            <label for="setNotice">Notice on the back of the card</label>
+            <textarea id="setNotice" rows="3" maxlength="160"></textarea>
+            <div class="btn-row spaced"><button class="btn btn-primary" id="saveSettingsBtn">Save settings</button></div>
+          </div>
+
+          <div class="panel">
+            <h2>Logo, stamp and signature</h2>
+            <p class="muted">PNG with a transparent background gives the best result for the stamp and signature.</p>
+            <div class="asset-grid">
+              <div class="asset" data-asset="logo">
+                <div class="asset-box"><img alt="Logo preview" id="prevLogo"><span class="asset-empty">No logo</span></div>
+                <strong>School logo</strong>
+                <div class="btn-row"><label class="btn btn-sm">Upload<input type="file" accept="image/*" data-asset-input="logo" hidden></label><button class="btn btn-sm" data-asset-clear="logo">Remove</button></div>
+              </div>
+              <div class="asset" data-asset="stamp">
+                <div class="asset-box"><img alt="Stamp preview" id="prevStamp"><span class="asset-empty">No stamp</span></div>
+                <strong>Official stamp</strong>
+                <div class="btn-row"><label class="btn btn-sm">Upload<input type="file" accept="image/*" data-asset-input="stamp" hidden></label><button class="btn btn-sm" data-asset-clear="stamp">Remove</button></div>
+              </div>
+              <div class="asset" data-asset="signature">
+                <div class="asset-box"><img alt="Signature preview" id="prevSignature"><span class="asset-empty">No signature</span></div>
+                <strong>Director signature</strong>
+                <div class="btn-row"><label class="btn btn-sm">Upload<input type="file" accept="image/*" data-asset-input="signature" hidden></label><button class="btn btn-sm" data-asset-clear="signature">Remove</button></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div class="panel">
+            <h2>Change admin password</h2>
+            <label for="pwCurrent">Current password</label>
+            <input id="pwCurrent" type="password" autocomplete="current-password">
+            <label for="pwNew">New password</label>
+            <input id="pwNew" type="password" autocomplete="new-password">
+            <label for="pwConfirm">Confirm new password</label>
+            <input id="pwConfirm" type="password" autocomplete="new-password">
+            <div class="btn-row spaced"><button class="btn btn-primary" id="changePwBtn">Change password</button></div>
+          </div>
+
+          <div class="panel">
+            <h2>Data and backup</h2>
+            <p class="muted">Data stays in this browser until you delete it. Make a backup regularly, especially before clearing the browser or moving to another computer.</p>
+            <div class="btn-row">
+              <button class="btn" id="backupBtn">Download backup (JSON)</button>
+              <label class="btn">Restore backup<input type="file" id="restoreFile" accept=".json,application/json" hidden></label>
+              <button class="btn" id="sqlBtn">Export as SQL</button>
+            </div>
+            <hr>
+            <p class="muted">Danger zone</p>
+            <div class="btn-row">
+              <button class="btn btn-danger" id="delAllStudentsBtn">Delete all students</button>
+              <button class="btn btn-danger" id="resetAllBtn">Erase everything</button>
+            </div>
+            <p class="hint" id="storageInfo"></p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+</div>
+
+<div id="modalRoot"></div>
+<div id="toastRoot" aria-live="polite"></div>
+<div id="busy" class="busy" hidden><div class="spinner"></div><span id="busyText">Working</span></div>
+<div id="printArea"></div>
+<div id="exportStage" aria-hidden="true"></div>
+
+<!-- Libraries: Excel reading/writing and PDF export (loaded from CDN). The app still works without them:
+     CSV import/export and "Print then Save as PDF" are used as fallbacks. -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
